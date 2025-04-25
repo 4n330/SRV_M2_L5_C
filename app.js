@@ -23,6 +23,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/dishes', dishesRouter);
 
+app.get('/', (req, res) => {
+  res.send('API is running on Render 🚀');
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
