@@ -10,7 +10,6 @@ const connection = {
 	host: process.env.HOST,
 	port: process.env.DATABASE_PORT,
 	dialect: process.env.DIALECT,
-	dialectmodel: process.env.DIALECTMODEL,
 };
 const sequelize = new Sequelize(connection);
 const db = {};
